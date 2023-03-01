@@ -1,9 +1,15 @@
 const express = require('express'); //requerir el modulo express
 const mongoose = require("mongoose");
 require("dotenv").config();
+const userRoutes = require("./routes/user");
 
 const app = express(); //ejrcutar express
 const port = process.env.PORT || 9000;
+
+// middleware
+app.use(express.json());
+app.use('/api', userRoutes);
+
 
 // routes
 app.get("/", (req, res) => {
