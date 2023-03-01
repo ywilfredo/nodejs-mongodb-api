@@ -3,9 +3,9 @@ POST http://localhost:9000/api/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Nicola Tesla",
-    "age": 54,
-    "email": "tesla@gmail.com"
+    "name": "Guido van Rossum",
+    "age": 67,
+    "email": "guido_van@gmail.com"
 }
 
 ###
